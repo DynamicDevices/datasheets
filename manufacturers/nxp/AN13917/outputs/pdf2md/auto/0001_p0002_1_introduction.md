@@ -1,4 +1,4 @@
-# 1  Introduction
+# 1 Introduction
 
 This application note is intended to help system designers to create power-optimized systems. It describes how to measure the current drain of the i.MX 93 application processor on an NXP i.MX 93 EVK board through different use cases.
 

@@ -204,14 +204,12 @@ Page 48
 ## 10. Revision history
 Page 49
 
+---
+
 ## Legal information
 Page 50
 
----
-
-**Document Information:**
-
-Please be aware that important notices concerning this document and the product(s) described herein, have been included in section 'Legal information'.
+**Please be aware that important notices concerning this document and the product(s) described herein, have been included in section 'Legal information'.**
 
 © 2024 NXP B.V.  
 All rights reserved.

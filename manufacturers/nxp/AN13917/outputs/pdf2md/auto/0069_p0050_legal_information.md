@@ -79,6 +79,7 @@ NXP B.V. is not an operating company and it does not distribute or sell products
 ---
 
 **Document:** AN13917 - i.MX 93 Power Consumption Measurement  
-**Revision:** Rev. 3 — 29 February 2024  
+**Revision:** 3  
+**Date:** 29 February 2024  
 **Copyright:** © 2024 NXP B.V. All rights reserved.  
-All information provided in this document is subject to legal disclaimers.
+**Disclaimer:** All information provided in this document is subject to legal disclaimers.
