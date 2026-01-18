@@ -41,3 +41,15 @@
 - LLM_RPS: 0.5
 - Workers: 2
 - Command: python pdf2md.py -i "/data_drive/dd/pdf2md/datasheets/manufacturers/nxp/AN13917/source/AN13917.pdf" -o "/data_drive/dd/pdf2md/datasheets/manufacturers/nxp/AN13917/outputs/pdf2md/auto" -p prompt.txt -w 2 --provider anthropic (with vision=auto)
+
+---
+## Run metadata (generated)
+- Date: 2026-01-18T22:58:04+00:00
+- Source: /data_drive/dd/pdf2md/datasheets/manufacturers/nxp/AN13917/source/AN13917.pdf
+- pdf2md commit: e7f0145ff92b79fe594becfb7832577621411039
+- pdf2md dirty files: 0
+- Provider: anthropic
+- Vision mode: auto
+- LLM_RPS: 0.5
+- Workers: 2
+- Command: python pdf2md.py -i "/data_drive/dd/pdf2md/datasheets/manufacturers/nxp/AN13917/source/AN13917.pdf" -o "/data_drive/dd/pdf2md/datasheets/manufacturers/nxp/AN13917/outputs/pdf2md/auto" -p prompt.txt -w 2 --provider anthropic (with vision=auto)
