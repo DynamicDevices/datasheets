@@ -1,12 +1,16 @@
 # pdftotext baseline
 
-Recommended command (example):
+## Conversion metadata (fill this in)
+
+- **Date generated**:
+- **Tool**: `pdftotext` (poppler)
+- **Tool version**: `pdftotext -v`
+- **Command used**:
 
 ```bash
 pdftotext -layout AN13917.pdf output.txt
 ```
 
-Record:
-- Command used
-- Tool version
-- Any post-processing
+## Notes
+
+- Record any post-processing you applied (if any).

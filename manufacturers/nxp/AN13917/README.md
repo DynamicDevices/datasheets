@@ -4,6 +4,34 @@
 
 **Do not store confidential or NDA/proprietary datasheets here.** Only include documents you are allowed to redistribute publicly.
 
+## Conversion metadata (fill this in)
+
+Record exactly what produced the artifacts in this folder so results are reproducible.
+
+- **Date generated**:
+- **Source PDF filename**:
+- **Source PDF checksum** (recommended):
+  - `sha256sum source/<file>.pdf`
+
+### Baseline (`pdftotext`)
+- **Tool**: `pdftotext` (poppler)
+- **Tool version**: `pdftotext -v`
+- **Command used**:
+  - Example: `pdftotext -layout source/<file>.pdf outputs/pdftotext/output.txt`
+
+### pdf2md (`auto` / `always`)
+- **Tool**: `pdf2md` (this project)
+- **Repository**: `DynamicDevices/pdf2md`
+- **Git commit** (required):
+  - `git -C <path-to-pdf2md> rev-parse HEAD`
+- **Any local modifications?** (recommended):
+  - `git -C <path-to-pdf2md> status --porcelain`
+- **Provider / model** (required):
+  - Anthropic: `ANTHROPIC_MODEL_NAME`, `ANTHROPIC_VISION_MODE`, `LLM_PAGE_IMAGE_ZOOM`
+  - Gemini: `LLM_MODEL_NAME`, `LLM_VISION_MODE`, `LLM_PAGE_IMAGE_ZOOM`
+- **Command used**:
+  - Example: `./scripts/convert_pdf_anthropic.sh -i source/<file>.pdf -o outputs/pdf2md/always -w 2 --llm-rps 0.5`
+
 ## Source
 - Put the original PDF(s) in `source/`.
 
