@@ -2,6 +2,11 @@
 
 This repository stores **source datasheets** (usually PDFs) and **multiple conversion outputs** from different processes.
 
+## Critical: do NOT store confidential or NDA material
+
+**Do not add datasheets or documents that are confidential, proprietary, export-controlled, or covered by an NDA** to this repository.
+Only store documents that are **publicly distributable**.
+
 ## Organization
 
 - Group by **manufacturer** (lowercase): `manufacturers/<manufacturer>/...`

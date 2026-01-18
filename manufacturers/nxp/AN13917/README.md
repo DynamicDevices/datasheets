@@ -1,5 +1,9 @@
 # AN13917 (NXP) – Conversion Comparison
 
+## Critical: public documents only
+
+**Do not store confidential or NDA/proprietary datasheets here.** Only include documents you are allowed to redistribute publicly.
+
 ## Source
 - Put the original PDF(s) in `source/`.
 
