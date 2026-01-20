@@ -1,0 +1,486 @@
+                                                                                                                                                   TAS67524-Q1
+                                                                                                                                          SLVSK73 – NOVEMBER 2025
+
+TAS67524-Q1 1L Modulation, 50W, 2MHz Digital Input 4-Channel Automotive Class-D
+       Audio Amplifier with Current Sense and Real-time Load Diagnostics
+1 Features                                                             2 Applications
+•   AEC-Q100 qualified for Automotive applications                     •     Automotive head unit
+    – Temperature grade 1: –40°C to +125°C, TA                         •     Automotive external amplifier
+•   General operation                                                  •     Acoustic vehicle alerting system (AVAS)
+    – 4.5V to 19V supply voltage, 40V load dump                        3 Description
+    – Low latency path reducing group delay by
+        >70% at 48kHz                                                  The TAS67524-Q1 is a four-channel digital-input
+    – Support for 1.8V and 3.3V I/Os                                   Class-D audio amplifier that implements 1L
+    – I2C control with 8 address options                               modulation only requiring one inductor per BTL
+•   1L Modulation                                                      channel reducing system size and cost by removing
+    – Requires only one inductor per channel saving                    four inductors compared to a traditional solution.
+        four inductors versus a traditional design                     Additionally, 1L modulation lowers switching losses
+    – Lower system component cost for inductors                        compared to traditional Class-D modulation schemes.
+    – Smaller PCB footprint                                            The TAS67524-Q1 integrates DC and AC Load
+•   Audio Performance                                                  Diagnostics to determine the status of the connected
+    – THD+N 0.02% (4Ω, 1W, 1kHz)                                       loads. During audio playback this status can be
+    – Output noise: 35µVRMS at 14.4V, A-weighting                      monitored through output current sense which
+    – Efficiency > 90% at 4×25W, 4Ω, 14.4V                             is available for each channel and reports the
+•   Output current sensing by channel using I2S or                     measurement to a host processor through TDM with
+    TDM                                                                minimal delay. The device monitors the output load
+    – No external circuitry needed                                     condition while playing audio through real-time load
+•   Real-time load diagnostics                                         diagnostics independent of the host and audio input.
+    – Monitor output conditions while playing audio
+                                                                       The TAS67524-Q1 device features an additional a low
+    – Open Load, Shorted load, Short-to-power, and
+                                                                       latency signal path for each channel, providing up to
+        Short-to-ground detection
+                                                                       70% faster signal processing at 48kHz which enables
+•   DC and AC Standby load diagnostics
+                                                                       time-sensitive Active Noise Cancellation (ANC), Road
+•   Audio inputs
+                                                                       Noise Cancellation (RNC) applications.
+    – 2-4 channel using I2S or 4-16 channel using
+        TDM                                                            The device supports global temperature, channel
+    – Input sample rates: 44.1, 48, 96, 192kHz                         temperature and PVDD values using I2C readout for
+•   Audio outputs                                                      easy system level thermal management.
+    – 4 channel bridge-tied load (BTL), configurable 2                 The device is offered in a 56 pin HSSOP package
+        channel parallel-BTL (PBTL)                                    with the exposed thermal pad up.
+    – 2MHz output switching frequency
+    – 4×30W (4Ω, 14.4V, 1kHz 10% THD+N)                                                    Package Information
+    – 4×50W (2Ω, 14.4V, 1kHz 10% THD+N)                                      PART NUMBER          PACKAGE(1)                                 PACKAGE SIZE(2)
+•   Advanced spread-spectrum and selectable phase                      TAS67524-Q1               HSSOP (56)                                18.42mm × 10.35mm
+    offset
+                                                                       (1)    For all available packages, see the orderable addendum at
+•   Protection and Monitoring                                                 the end of the data sheet.
+    – Cycle-by-cycle current limiting                                  (2)    The package size (length × width) is a nominal value and
+    – Output short protection                                                 includes pins, where applicable.
+    – Clip detection with configurable thresholds                                                 1L Modulaon Channel Schema c
+
+
+
+    – Thermal foldback and PVDD foldback
+                                                                                                      PVDD
+
+
+
+
+    – I2C temperature and supply voltage readout                                                   OUTP
+
+
+
+
+    – Configurable overtemperature warning and                                                            OUTM
+                                                                                                                        Only 1 inductor
+                                                                                                                         needed per
+
+
+
+        individual channel shutdown
+                                                                                                                           channel
+
+
+
+
+    – DC offset, undervoltage and overvoltage
+                                                                                     Simplified Channel Schematic
+
+
+     An IMPORTANT NOTICE at the end of this data sheet addresses availability, warranty, changes, use in safety-critical applications,
+     intellectual property matters and other important disclaimers. PRODUCTION DATA.
+TAS67524-Q1
+SLVSK73 – NOVEMBER 2025                                                                                                         www.ti.com
+
+4 Device and Documentation Support
+TI offers an extensive line of development tools. Tools and software to evaluate the performance of the device,
+generate code, and develop solutions are listed below.
+4.1 Receiving Notification of Documentation Updates
+To receive notification of documentation updates, navigate to the device product folder on ti.com. Click on
+Notifications to register and receive a weekly digest of any product information that has changed. For change
+details, review the revision history included in any revised document.
+4.2 Support Resources
+TI E2E™ support forums are an engineer's go-to source for fast, verified answers and design help — straight
+from the experts. Search existing answers or ask your own question to get the quick design help you need.
+Linked content is provided "AS IS" by the respective contributors. They do not constitute TI specifications and do
+not necessarily reflect TI's views; see TI's Terms of Use.
+4.3 Trademarks
+TI E2E™ is a trademark of Texas Instruments.
+All trademarks are the property of their respective owners.
+4.4 Electrostatic Discharge Caution
+                  This integrated circuit can be damaged by ESD. Texas Instruments recommends that all integrated circuits be handled
+                  with appropriate precautions. Failure to observe proper handling and installation procedures can cause damage.
+                  ESD damage can range from subtle performance degradation to complete device failure. Precision integrated circuits may
+                  be more susceptible to damage because very small parametric changes could cause the device not to meet its published
+                  specifications.
+
+
+4.5 Glossary
+    TI Glossary       This glossary lists and explains terms, acronyms, and definitions.
+
+5 Revision History
+NOTE: Page numbers for previous revisions may differ from page numbers in the current version.
+              DATE                            REVISION                                             NOTES
+          November 2025                            *                                            Initial Release
+
+
+
+
+2       Submit Document Feedback                                                               Copyright © 2025 Texas Instruments Incorporated
+
+                                                   Product Folder Links: TAS67524-Q1
+                                                                                                      TAS67524-Q1
+www.ti.com                                                                                   SLVSK73 – NOVEMBER 2025
+
+
+6 Mechanical, Packaging, and Orderable Information
+The following pages include mechanical, packaging, and orderable information. This information is the most
+current data available for the designated devices. This data is subject to change without notice and revision of
+this document. For browser-based versions of this data sheet, refer to the left-hand navigation.
+
+
+
+
+Copyright © 2025 Texas Instruments Incorporated                                       Submit Document Feedback    3
+                                                  Product Folder Links: TAS67524-Q1
+                                                                                                                                                                      PACKAGE OPTION ADDENDUM
+
+       www.ti.com                                                                                                                                                                                                   17-Dec-2025
+
+
+
+
+PACKAGING INFORMATION
+
+       Orderable part number          Status     Material type      Package | Pins      Package qty | Carrier        RoHS             Lead finish/              MSL rating/               Op temp (°C)          Part marking
+                                        (1)            (2)                                                             (3)            Ball material             Peak reflow                                           (6)
+                                                                                                                                            (4)                      (5)
+
+        TAS67524QDKQRQ1               Active      Production      HSSOP (DKQ) | 56       1000 | LARGE T&R               -                NIPDAU            Level-3-260C-168 HR             -40 to 125               67524
+
+(1)
+      Status: For more details on status, see our product life cycle.
+
+(2)
+   Material type: When designated, preproduction parts are prototypes/experimental devices, and are not yet approved or released for full production. Testing and final process, including without limitation quality assurance,
+reliability performance testing, and/or process qualification, may not yet be complete, and this item is subject to further changes or possible discontinuation. If available for ordering, purchases will be subject to an additional
+waiver at checkout, and are intended for early internal evaluation purposes only. These items are sold without warranties of any kind.
+
+(3)
+      RoHS values: Yes, No, RoHS Exempt. See the TI RoHS Statement for additional information and value definition.
+
+(4)
+   Lead finish/Ball material: Parts may have multiple material finish options. Finish options are separated by a vertical ruled line. Lead finish/Ball material values may wrap to two lines if the finish value exceeds the maximum
+column width.
+
+(5)
+  MSL rating/Peak reflow: The moisture sensitivity level ratings and peak solder (reflow) temperatures. In the event that a part has multiple moisture sensitivity ratings, only the lowest level per JEDEC standards is shown.
+Refer to the shipping label for the actual reflow temperature that will be used to mount the part to the printed circuit board.
+
+(6)
+      Part marking: There may be an additional marking, which relates to the logo, the lot trace code information, or the environmental category of the part.
+
+Multiple part markings will be inside parentheses. Only one part marking contained in parentheses and separated by a "~" will appear on a part. If a line is indented then it is a continuation of the previous line and the two
+combined represent the entire part marking for that device.
+
+Important Information and Disclaimer:The information provided on this page represents TI's knowledge and belief as of the date that it is provided. TI bases its knowledge and belief on information provided by third parties, and
+makes no representation or warranty as to the accuracy of such information. Efforts are underway to better integrate information from third parties. TI has taken and continues to take reasonable steps to provide representative
+and accurate information but may not have conducted destructive testing or chemical analysis on incoming materials and chemicals. TI and TI suppliers consider certain information to be proprietary, and thus CAS numbers
+and other limited information may not be available for release.
+
+In no event shall TI's liability arising out of such information exceed the total purchase price of the TI part(s) at issue in this document sold by TI to Customer on an annual basis.
+
+
+
+
+                                                                                                          Addendum-Page 1
+                                                                               PACKAGE MATERIALS INFORMATION
+
+www.ti.com                                                                                                                                     18-Dec-2025
+
+
+
+TAPE AND REEL INFORMATION
+
+       REEL DIMENSIONS                                                                      TAPE DIMENSIONS
+                                                                                       K0       P1
+
+
+
+                                                                                                                       B0 W
+                                        Reel
+                                      Diameter
+                                                                                    Cavity            A0
+                                                                A0   Dimension designed to accommodate the component width
+                                                                B0   Dimension designed to accommodate the component length
+                                                                K0   Dimension designed to accommodate the component thickness
+                                                                W    Overall width of the carrier tape
+                                                                P1   Pitch between successive cavity centers
+
+
+                                       Reel Width (W1)
+                              QUADRANT ASSIGNMENTS FOR PIN 1 ORIENTATION IN TAPE
+
+                                                                                                      Sprocket Holes
+
+
+                                                 Q1        Q2          Q1    Q2
+
+                                                 Q3        Q4          Q3    Q4                  User Direction of Feed
+
+
+
+                                                            Pocket Quadrants
+
+
+*All dimensions are nominal
+             Device           Package Package Pins              SPQ       Reel   Reel   A0                    B0        K0     P1     W     Pin1
+                               Type Drawing                             Diameter Width (mm)                  (mm)      (mm)   (mm)   (mm) Quadrant
+                                                                          (mm) W1 (mm)
+  TAS67524QDKQRQ1             HSSOP     DKQ           56        1000        330.0        32.4        11.35   18.67     3.1    16.0   32.0    Q1
+
+
+
+
+                                                                      Pack Materials-Page 1
+                                                                PACKAGE MATERIALS INFORMATION
+
+www.ti.com                                                                                                              18-Dec-2025
+
+
+
+ TAPE AND REEL BOX DIMENSIONS
+
+
+
+
+                                                               Width (mm)
+                                                                              H
+                      W
+
+
+
+
+                                                          L
+
+
+
+
+*All dimensions are nominal
+             Device           Package Type   Package Drawing   Pins         SPQ    Length (mm)   Width (mm)   Height (mm)
+   TAS67524QDKQRQ1              HSSOP             DKQ           56          1000      367.0        367.0         55.0
+
+
+
+
+                                                        Pack Materials-Page 2
+                                                                                                         PACKAGE OUTLINE
+DKQ0056D                                              SCALE 1.000
+                                                                    PowerPAD TM HSSOP - 2.475 mm max height
+                                                                                                                     PLASTIC SMALL OUTLINE
+
+
+
+                                                                                                                                C
+                                          10.67
+                                                TYP                                                         SEATING PLANE
+                                          10.03
+                A                              PIN 1 ID AREA                                                             0.1 C
+                                                                                  54X 0.635
+                                                                         56
+                        1
+
+
+                                                                                              EXPOSED
+                                                                                              THERMAL PAD
+
+
+
+
+             18.54                                                            7.136
+             18.29                                                            6.255
+            NOTE 3                                                                     2X
+                                                                                      17.15
+
+
+
+
+                                           5.102
+                                           4.194
+
+
+
+                       28
+                                                                    29                0.37
+                                                                               56X
+                                                                                      0.17                                     (2.29)
+                                           7.59
+                        B                                                             0.13    C A B
+                                           7.39
+                                          NOTE 4
+
+
+
+           2.29 0.05                                                            0.25
+                                                                                     TYP
+                                                                                0.13                                                     2.475
+                                                                                                0.25
+                                                                                                                                         2.240
+                                                                                         GAGE PLANE                                     NOTE 6
+         SEE DETAIL A
+
+                                                                                                                        1.02            0.08
+                                                                                              0 -8                      0.51            0.00
+
+                                                                                                                     DETAIL A
+                                                                                                                      TYPICAL
+
+                                                                                                                               4229965/A 09/2023
+
+NOTES:                                                                                               PowerPAD is a trademark of Texas Instruments.
+
+1. All linear dimensions are in millimeters. Any dimensions in parenthesis are for reference only. Dimensioning and tolerancing
+   per ASME Y14.5M.
+2. This drawing is subject to change without notice.
+3. This dimension does not include mold flash, protrusions, or gate burrs. Mold flash, protrusions, or gate burrs shall not
+   exceed 0.15 mm per side.
+4. This dimension does not include interlead flash. Interlead flash shall not exceed 0.25 mm per side.
+5. The exposed thermal pad is designed to be attached to an external heatsink.
+6. For clamped heatsink design, refer to overall package height above the seating plane as 2.325 +/- 0.075 and molded body
+   thickness dimension.
+
+
+
+
+                                                                         www.ti.com
+                                                                               EXAMPLE BOARD LAYOUT
+DKQ0056D                                                      PowerPAD TM HSSOP - 2.475 mm max height
+                                                                                                         PLASTIC SMALL OUTLINE
+
+
+
+                             56X (1.9)
+                                                               SYMM                               SEE DETAILS
+                                          1
+                                                                                             56
+
+                          56X (0.4)
+
+
+
+
+                     54X (0.635)
+
+
+
+
+                               SYMM
+
+
+
+
+                                         28                                                  29
+
+                       (R0.05) TYP                              (9.5)
+
+                                                  LAND PATTERN EXAMPLE
+                                                      EXPOSED METAL SHOWN
+                                                            SCALE:6X
+
+
+
+                                                                   SOLDER MASK                         METAL UNDER
+              SOLDER MASK                        METAL
+                                                                       OPENING                         SOLDER MASK
+              OPENING
+
+
+
+                                                    EXPOSED METAL                                        EXPOSED METAL
+                                      0.05 MAX                                           0.05 MIN
+                                      AROUND                                             AROUND
+
+                             NON SOLDER MASK                                         SOLDER MASK
+                                 DEFINED                                               DEFINED
+
+                                                   SOLDER MASK DETAILS
+                                                           NOT TO SCALE
+
+                                                                                                                4229965/A 09/2023
+NOTES: (continued)
+
+7. Publication IPC-7351 may have alternate designs.
+8. Solder mask tolerances between and around signal pads can vary based on board fabrication site.
+9. Size of metal pad may vary due to creepage requirement.
+
+
+
+
+                                                                www.ti.com
+                                                                               EXAMPLE STENCIL DESIGN
+DKQ0056D                                                      PowerPAD TM HSSOP - 2.475 mm max height
+                                                                                                          PLASTIC SMALL OUTLINE
+
+
+
+
+                              56X (1.9)
+                                                                 SYMM
+                                           1
+                                                                                               56
+
+                          56X (0.4)
+
+
+
+
+                      54X (0.635)
+
+
+
+
+                                SYMM
+
+
+
+
+                                          28                                                   29
+
+                       (R0.05) TYP                                (9.5)
+
+
+                                                    SOLDER PASTE EXAMPLE
+                                                  BASED ON 0.125 MM THICK STENCIL
+                                                             SCALE:6X
+
+
+
+
+                                                                                                                  4229965/A 09/2023
+NOTES: (continued)
+
+10. Laser cutting apertures with trapezoidal walls and rounded corners may offer better paste release. IPC-7525 may have alternate
+   design recommendations.
+11. Board assembly site may have different recommendations for stencil design.
+
+
+
+
+                                                                 www.ti.com
+                                         IMPORTANT NOTICE AND DISCLAIMER
+TI PROVIDES TECHNICAL AND RELIABILITY DATA (INCLUDING DATASHEETS), DESIGN RESOURCES (INCLUDING REFERENCE
+DESIGNS), APPLICATION OR OTHER DESIGN ADVICE, WEB TOOLS, SAFETY INFORMATION, AND OTHER RESOURCES “AS IS”
+AND WITH ALL FAULTS, AND DISCLAIMS ALL WARRANTIES, EXPRESS AND IMPLIED, INCLUDING WITHOUT LIMITATION ANY
+IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-INFRINGEMENT OF THIRD
+PARTY INTELLECTUAL PROPERTY RIGHTS.
+These resources are intended for skilled developers designing with TI products. You are solely responsible for (1) selecting the appropriate
+TI products for your application, (2) designing, validating and testing your application, and (3) ensuring your application meets applicable
+standards, and any other safety, security, regulatory or other requirements.
+These resources are subject to change without notice. TI grants you permission to use these resources only for development of an
+application that uses the TI products described in the resource. Other reproduction and display of these resources is prohibited. No license
+is granted to any other TI intellectual property right or to any third party intellectual property right. TI disclaims responsibility for, and you fully
+indemnify TI and its representatives against any claims, damages, costs, losses, and liabilities arising out of your use of these resources.
+TI’s products are provided subject to TI’s Terms of Sale, TI’s General Quality Guidelines, or other applicable terms available either on
+ti.com or provided in conjunction with such TI products. TI’s provision of these resources does not expand or otherwise alter TI’s applicable
+warranties or warranty disclaimers for TI products. Unless TI explicitly designates a product as custom or customer-specified, TI products
+are standard, catalog, general purpose devices.
+TI objects to and rejects any additional or different terms you may propose.
+IMPORTANT NOTICE
+
+                                                Copyright © 2025, Texas Instruments Incorporated
+                                                                Last updated 10/2025
+
